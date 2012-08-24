@@ -47,15 +47,11 @@ You can use, reproduce and do whatever you want with syte but I would like you t
 [![amastys](https://github.com/rigoneri/syte/blob/master/readme-imgs/amastys.png?raw=true)](http://amastys.ru)
 [![damilare](https://github.com/rigoneri/syte/blob/master/readme-imgs/damilare.png?raw=true)](http://dami.me)
 [![eventh](https://github.com/rigoneri/syte/blob/master/readme-imgs/eventh.png?raw=true)](http://eventh.herokuapp.com)
-<<<<<<< HEAD
-[![eventh](https://github.com/rigoneri/syte/blob/master/readme-imgs/ameswarb.png?raw=true)](http://eventh.herokuapp.com)
-=======
 [![clayferris](https://github.com/rigoneri/syte/blob/master/readme-imgs/clayferris.png?raw=true)](http://claytonferris.com)
 [![alexmeswarb](https://github.com/rigoneri/syte/blob/master/readme-imgs/ameswarb.png?raw=true)](http://alexmeswarb.com)
 [![pranayairan](https://github.com/rigoneri/syte/blob/master/readme-imgs/pranayairan.png?raw=true)](http://pranayairan.herokuapp.com)
 [![lfranchi](https://github.com/rigoneri/syte/blob/master/readme-imgs/lfranchi.png?raw=true)](http://lfranchi.com)
 
->>>>>>> upstream/master
 
 ## Social Integrations
 
