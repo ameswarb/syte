@@ -28,6 +28,21 @@ function setupLinks() {
       if (this.id == 'home-link' && window.location.pathname == '/') {
          adjustSelection('home');
       }
+      else if (this.id == 'ameswarb-portfolio-link') {
+         adjustSelection('ameswarb-portfolio');
+
+         var spinner = new Spinner(spin_opts).spin();
+         $('#ameswarb-portfolio-link').append(spinner.el);
+
+         require(["text!templates/ameswarb-portfolio-view.html"],
+            function(ameswarb_portfolio_view) {
+              $(ameswarb_portfolio_view).modal().on('hidden', function () {
+                $(this).remove();
+                adjustSelection('home');
+              })
+              spinner.stop();
+            });
+      }
       else if(this.id == 'instagram-link' && instagram_integration_enabled) {
          adjustSelection('instagram');
          setupInstagram(this);
@@ -74,10 +89,13 @@ function adjustSelection(component) {
       $('#' + allComponents[c] + '-profile').remove();
     }
   }
+  
+  if (component != 'ameswarb-portfolio') {
+    $('.ameswarb-portfolio.modal').remove();
+  }
 
   $('.main-nav').children('li').removeClass('sel');
   $('#' + component + '-link').parent().addClass('sel');
-
   if (component == 'home')
     $url = null;
 }

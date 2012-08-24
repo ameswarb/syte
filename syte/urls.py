@@ -85,3 +85,8 @@ urlpatterns += patterns('',
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT}),
 )
+
+#Portfolio
+urlpatterns += patterns('django.views.generic.simple',
+    url(r'^portfolio/?$', 'direct_to_template', {'template':'ameswarb-portfolio.html'}),
+)
