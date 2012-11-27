@@ -8,7 +8,8 @@ var allComponents = [
   'lastfm',
   'soundcloud',
   'bitbucket',
-  'foursquare'
+  'foursquare',
+  'tent'
 ];
 
 function setupLinks() {
@@ -74,6 +75,10 @@ function setupLinks() {
       else if(this.id == 'foursquare-link' && foursquare_integration_enabled) {
          adjustSelection('foursquare');
          setupFoursquare(this);
+      }
+      else if(this.id == 'tent-link' && tent_integration_enabled) {
+         adjustSelection('tent');
+         setupTent(this);
       }
       else {
          window.location = this.href;
