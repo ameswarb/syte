@@ -26,7 +26,7 @@ USE_TZ = True
 
 MEDIA_ROOT = os.path.join(SITE_ROOT, 'static')
 
-SECRET_KEY = '5c^pml#7e3d$zor%*_7y098(l0i=d3$+y_((11-_j0&amp;f9rw9%)'
+SECRET_KEY = 'z-d(!#vl88xz_@a&4pbk5u02@vfwld25o0uind96egqimw*2a='
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
